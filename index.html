@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ProMan - Cinéma Libre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>🎥 ProMan</header>
+
+  <div class="grid">
+    <div class="film" onclick="playFilm('films/film1.mp4')">
+      <img src="posters/film1.jpg" alt="Film 1">
+      <div class="film-title">La Nuit des Morts-Vivants</div>
+    </div>
+    <div class="film" onclick="playFilm('films/film2.mp4')">
+      <img src="posters/film2.jpg" alt="Film 2">
+      <div class="film-title">Plan 9 from Outer Space</div>
+    </div>
+  </div>
+
+  <div id="player">
+    <video id="videoPlayer" controls autoplay></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
