@@ -7,22 +7,63 @@
 </head>
 <body>
 
-  <header>🎥 ProMan</header>
+  <header>
+    <h1>🎥 ProMan</h1>
+    <nav>
+      <ul>
+        <li><a href="#action">Action</a></li>
+        <li><a href="#comique">Comique</a></li>
+        <li><a href="#jeunesse">Jeunesse</a></li>
+        <li><a href="#amour">Amour</a></li>
+      </ul>
+      <input type="text" id="searchInput" placeholder="🔍 Rechercher un film...">
+    </nav>
+  </header>
 
-  <div class="grid">
-    <div class="film" onclick="playFilm('films/film1.mp4')">
-      <img src="posters/film1.jpg" alt="Film 1">
-      <div class="film-title">La Nuit des Morts-Vivants</div>
+  <section id="action">
+    <h2>🎬 Action</h2>
+    <div class="grid">
+      <div class="film" onclick="playFilm('films/action1.mp4')">
+        <img src="posters/action1.jpg" alt="Action 1">
+        <div class="film-title">Action 1</div>
+      </div>
+      <!-- Ajoute jusqu'à 10 films -->
     </div>
-    <div class="film" onclick="playFilm('films/film2.mp4')">
-      <img src="posters/film2.jpg" alt="Film 2">
-      <div class="film-title">Plan 9 from Outer Space</div>
-    </div>
-  </div>
+  </section>
 
-  <div id="player">
-    <video id="videoPlayer" controls autoplay></video>
-  </div>
+  <section id="comique">
+    <h2>😂 Comique</h2>
+    <div class="grid">
+      <div class="film" onclick="playFilm('films/comique1.mp4')">
+        <img src="posters/comique1.jpg" alt="Comique 1">
+        <div class="film-title">Comique 1</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jeunesse">
+    <h2>👶 Jeunesse</h2>
+    <div class="grid">
+      <div class="film" onclick="playFilm('films/jeunesse1.mp4')">
+        <img src="posters/jeunesse1.jpg" alt="Jeunesse 1">
+        <div class="film-title">Jeunesse 1</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="amour">
+    <h2>❤️ Amour</h2>
+    <div class="grid">
+      <div class="film" onclick="playFilm('films/amour1.mp4')">
+        <img src="posters/amour1.jpg" alt="Amour 1">
+        <div class="film-title">Amour 1</div>
+      </div>
+    </div>
+  </section>
+
+  <div id="video-container" style="display:none; text-align:center; padding:20px;">
+  <video id="videoPlayer" controls autoplay width="80%"></video>
+</div>
 
   <script src="script.js"></script>
 </body>
